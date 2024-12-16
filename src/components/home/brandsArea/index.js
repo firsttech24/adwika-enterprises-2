@@ -9,27 +9,27 @@ export default function BrandsArea() {
           <div className="row align-items-center active-brand-carusel justify-content-start no-gutters">
             <div className="col single-brand">
               <Link href="#">
-                <img className="mx-auto" src="img/l1.png" alt="" />
+                {/* <img className="mx-auto" src="img/l1.png" alt="" /> */}
               </Link>
             </div>
             <div className="col single-brand">
               <Link href="#">
-                <img className="mx-auto" src="img/l2.png" alt="" />
+                {/* <img className="mx-auto" src="img/l2.png" alt="" /> */}
               </Link>
             </div>
             <div className="col single-brand">
               <Link href="#">
-                <img className="mx-auto" src="img/l3.png" alt="" />
+                {/* <img className="mx-auto" src="img/l3.png" alt="" /> */}
               </Link>
             </div>
             <div className="col single-brand">
               <Link href="#">
-                <img className="mx-auto" src="img/l4.png" alt="" />
+                {/* <img className="mx-auto" src="img/l4.png" alt="" /> */}
               </Link>
             </div>
             <div className="col single-brand">
               <Link href="#">
-                <img className="mx-auto" src="img/l5.png" alt="" />
+                {/* <img className="mx-auto" src="img/l5.png" alt="" /> */}
               </Link>
             </div>
           </div>

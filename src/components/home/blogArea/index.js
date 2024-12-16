@@ -17,7 +17,7 @@ export default function BlogArea() {
           <div className="active-blog-carusel">
             <div className="single-blog-post item">
               <div className="thumb">
-                <img className="img-fluid" src="img/b1.jpg" alt="" />
+                {/* <img className="img-fluid" src="img/b1.jpg" alt="" /> */}
               </div>
               <div className="details">
                 <div className="tags">
@@ -42,7 +42,7 @@ export default function BlogArea() {
             </div>
             <div className="single-blog-post item">
               <div className="thumb">
-                <img className="img-fluid" src="img/b2.jpg" alt="" />
+                {/* <img className="img-fluid" src="img/b2.jpg" alt="" /> */}
               </div>
               <div className="details">
                 <div className="tags">
@@ -59,7 +59,7 @@ export default function BlogArea() {
                   <h4 className="title">Creative Outdoor Ads</h4>
                 </Link>
                 <p>
-                  Acres of Diamonds… you’ve read the famous story, or at least
+                  Acres of Diamonds… you've read the famous story, or at least
                   had it related to you. A farmer.
                 </p>
                 <h6 className="date">31st January,2018</h6>
@@ -67,7 +67,7 @@ export default function BlogArea() {
             </div>
             <div className="single-blog-post item">
               <div className="thumb">
-                <img className="img-fluid" src="img/b3.jpg" alt="" />
+                {/* <img className="img-fluid" src="img/b3.jpg" alt="" /> */}
               </div>
               <div className="details">
                 <div className="tags">
@@ -94,7 +94,7 @@ export default function BlogArea() {
             </div>
             <div className="single-blog-post item">
               <div className="thumb">
-                <img className="img-fluid" src="img/b1.jpg" alt="" />
+                {/* <img className="img-fluid" src="img/b1.jpg" alt="" /> */}
               </div>
               <div className="details">
                 <div className="tags">
@@ -119,7 +119,7 @@ export default function BlogArea() {
             </div>
             <div className="single-blog-post item">
               <div className="thumb">
-                <img className="img-fluid" src="img/b2.jpg" alt="" />
+                {/* <img className="img-fluid" src="img/b2.jpg" alt="" /> */}
               </div>
               <div className="details">
                 <div className="tags">
@@ -136,7 +136,7 @@ export default function BlogArea() {
                   <h4 className="title">Creative Outdoor Ads</h4>
                 </Link>
                 <p>
-                  Acres of Diamonds… you’ve read the famous story, or at least
+                  Acres of Diamonds… you've read the famous story, or at least
                   had it related to you. A farmer.
                 </p>
                 <h6 className="date">31st January,2018</h6>
@@ -144,7 +144,7 @@ export default function BlogArea() {
             </div>
             <div className="single-blog-post item">
               <div className="thumb">
-                <img className="img-fluid" src="img/b3.jpg" alt="" />
+                {/* <img className="img-fluid" src="img/b3.jpg" alt="" /> */}
               </div>
               <div className="details">
                 <div className="tags">

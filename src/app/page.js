@@ -8,10 +8,12 @@ import TestimonialArea from "@/components/home/testimonialArea";
 import CallToActionArea from "@/components/home/callToActionArea";
 import BlogArea from "@/components/home/blogArea";
 import BrandsArea from "@/components/home/brandsArea";
+import Header from "@/components/header";
 
 export default function page() {
   return (
     <main>
+      <Header />
       <BannerArea />
       <ServiceArea />
       <GalleryArea />

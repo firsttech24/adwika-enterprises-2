@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header id="header home">
+    <header id="header">
       <div className="header-top">
         <div className="container">
           <div className="row">
@@ -45,7 +45,7 @@ function Header() {
         <div className="row align-items-center justify-content-between d-flex">
           <div id="logo">
             <Link href="index.html">
-              <img src="img/logo.png" alt="" title="" />
+              {/* <img src="img/logo.png" alt="" title="" /> */}
             </Link>
           </div>
           <nav id="nav-menu-container">

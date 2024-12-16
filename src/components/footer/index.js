@@ -28,45 +28,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="col-lg-5 col-md-6 col-sm-6">
-            <div className="single-footer-widget">
-              <h6>Newsletter</h6>
-              <p>Stay update with our latest</p>
-              <div className="" id="mc_embed_signup">
-                <form
-                  target="_blank"
-                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                  method="get"
-                  className="form-inline"
-                >
-                  <input
-                    className="form-control"
-                    name="EMAIL"
-                    placeholder="Email Address"
-                    /* onFocus="this.placeholder = ''"
-                    onBlur="this.placeholder = 'Email Address'" */
-                    required=""
-                    type="email"
-                  />
-                  <button className="click-btn btn btn-default">
-                    <i className="lnr lnr-arrow-right" aria-hidden="true"></i>
-                  </button>
-                  <div
-                    style={{
-                      position: " absolute",
-                      left: "-5000px",
-                    }}
-                  >
-                    <input
-                      name="b_36c4fd991d266f23781ded980_aefe40901a"
-                      tabIndex="-1"
-                      // value=""
-                      type="text"
-                    />
-                  </div>
-                  <div className="info"></div>
-                </form>
-              </div>
-            </div>
+            
           </div>
           <div className="col-lg-2 col-md-6 col-sm-6 social-widget">
             <div className="single-footer-widget">

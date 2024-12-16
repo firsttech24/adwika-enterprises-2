@@ -82,6 +82,8 @@
 .banner-area {
   background: url(./../../../../public/img/banner-bg.jpg) center;
   background-size: cover;
+  height: 90vh;
+  // border: 1px solid red;
   .fullscreen {
     @include media-breakpoint-down(sm) {
       height: 700px !important;

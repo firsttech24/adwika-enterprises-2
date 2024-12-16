@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import Header from "@/components/header";
 
 export default function BannerArea() {
   return (
-    <section className="banner-area relative" id="home">
+    <section className="banner-area relative flex-col-center" id="home">
       <div className="overlay overlay-bg"></div>
-      <div className="container">
+      <div className="container p-5">
         <div className="row fullscreen d-flex justify-content-center align-items-center">
           <div className="banner-content col-lg-9 col-md-12 justify-content-center">
             <h1>
