@@ -1,45 +1,71 @@
-import React from 'react'
-import './header.scss'
+"use client";
 
-function Header() {
+import { useState } from "react";
+import "./header.scss";
+
+import { ImLocation2 } from "react-icons/im";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { RxHamburgerMenu } from "react-icons/rx";
+
+import Sidebar from "./sidebar";
+
+export default function Header() {
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  // hide sidebar
+  const handleHideSidebar = () => setShowSidebar(false);
+
   return (
-    <header id="header home" >
-    <div className="header-top">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
-                  <p className="text-white">Flat No. - 253, Pocket - 1, Sector - 9, Dwarka, New Delhi - 110075</p>				  
-                </div>
-                <div className="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
-                    <ul>
-                      <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
-                      <li><a href="#"><i className="fa fa-behance"></i></a></li>
-                    </ul>			
-                </div>
-            </div>			  					
+    <div className="Header container-fluid p-4 position-fixed top-0">
+      {/* logo */}
+      <div className="row d-flex align-items-center justify-content-between">
+        <img
+          src="/logo.png"
+          alt="adwika enterprises"
+          className="img-fluid img-thumbnail col-7 col-md-4 col-xxl-2"
+        />
+
+        {/* address */}
+        <div className="col-5 text-end d-none d-xxl-block">
+          <ImLocation2 className="fs-4" />
+          <span className="ms-2">
+            Flat No. - 253, Pocket - 1, Sector - 9, Dwarka, New Delhi - 110075
+          </span>
         </div>
-  </div>
-  <div className="container main-menu">
-      <div className="row align-items-center justify-content-between d-flex">
-        <div id="logo">
-          <a href="/"><img src="img/logo.png" alt="" title="" /></a>
+
+        {/* phone */}
+        <a
+          href="tel:+91 98916 54371"
+          className="col-2 d-none d-xxl-block text-center"
+        >
+          <FaPhoneAlt className="fs-5" />
+          <span className="ms-2">+91 98916 54371</span>
+        </a>
+
+        {/* email */}
+        <a
+          href="mailto:bikash@adwikaenterprises.com"
+          className="col-2 d-none d-xxl-block text-end"
+        >
+          <MdEmail className="fs-4" />
+          <span className="ms-2">bikash@adwikaenterprises.com</span>
+        </a>
+
+        {/* hamburger icon */}
+        <div
+          onClick={() => setShowSidebar(true)}
+          className="col-5 col-md-8 col-xxl-1 text-end"
+        >
+          <RxHamburgerMenu className="hamBurgerIcon fs-1" />
         </div>
-        <nav id="nav-menu-container">
-          <ul className="nav-menu">
-            <li className="menu-active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav> 		
+
+        {/* sidebar */}
+        <Sidebar
+          showSidebar={showSidebar}
+          handleHideSidebar={handleHideSidebar}
+        />
       </div>
-  </div>
-</header>
-
-  )
+    </div>
+  );
 }
-
-export default Header;

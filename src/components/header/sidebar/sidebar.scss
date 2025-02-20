@@ -1,0 +1,38 @@
+.Sidebar {
+  border: 1px solid black;
+  width: 18%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  .closeIcon {
+    cursor: pointer;
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+  a {
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+  .activeRoute {
+    color: var(--secondary-color);
+  }
+}
+
+.showSidebar {
+  transform: translateX(0);
+}
+
+// laptop view
+@media all and (max-width: 1024px) {
+  .Sidebar {
+    width: 55%;
+  }
+}
+
+// mobile view
+@media all and (max-width: 480px) {
+  .Sidebar {
+    width: 70%;
+  }
+}

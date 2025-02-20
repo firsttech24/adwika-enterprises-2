@@ -1,11 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Header from "@/components/header";
+import Home from "@/app/home/index";
 
-export default function Home() {
+export default function page() {
   return (
-   <>
-   
-   </>
+    <>
+      <Home />
+      <Home />
+      <Home />
+    </>
   );
 }
