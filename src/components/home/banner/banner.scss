@@ -1,0 +1,28 @@
+.Banner {
+  border: 1px solid red;
+  .swiper {
+    width: 50%;
+    top: 20%;
+    .sliderContent {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .Banner {
+    .swiper {
+      top: 15%;
+      width: 75%;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .Banner {
+    .swiper {
+      top: 8%;
+      width: 90%;
+    }
+  }
+}

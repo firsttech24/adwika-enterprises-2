@@ -1,4 +1,16 @@
 .Home {
   border: 1px solid red;
-  margin-top: 7vw;
+  margin-top: 5.6vw;
+}
+
+@media all and (max-width: 1024px) {
+  .Home {
+    margin-top: 12vw;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .Home {
+    margin-top: 25vw;
+  }
 }

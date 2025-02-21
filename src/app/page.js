@@ -4,8 +4,6 @@ export default function page() {
   return (
     <>
       <Home />
-      <Home />
-      <Home />
     </>
   );
 }

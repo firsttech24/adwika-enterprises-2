@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./styles.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "swiper/css";
 
 import Header from "@/components/header";
 

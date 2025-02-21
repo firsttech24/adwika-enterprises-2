@@ -17,7 +17,7 @@ export default function Header() {
   const handleHideSidebar = () => setShowSidebar(false);
 
   return (
-    <div className="Header container-fluid p-4 position-fixed top-0">
+    <div className="Header container-fluid p-4 py-xxl-3 position-fixed top-0">
       {/* logo */}
       <div className="row d-flex align-items-center justify-content-between">
         <img
