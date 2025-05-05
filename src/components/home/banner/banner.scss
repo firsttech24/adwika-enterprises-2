@@ -1,10 +1,27 @@
 .Banner {
   border: 1px solid red;
   .swiper {
+    border: 1px solid #fff;
     width: 50%;
     top: 20%;
     .sliderContent {
       background-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+  .customPagination {
+    bottom: 30%;
+    left: 28%;
+    .customDot {
+      background-color: #ccc;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      &.swiper-pagination-bullet-active {
+        background-color: var(--secondary-color);
+      }
     }
   }
 }
@@ -15,6 +32,9 @@
       top: 15%;
       width: 75%;
     }
+    .customPagination {
+      left: 15%;
+    }
   }
 }
 
@@ -23,6 +43,10 @@
     .swiper {
       top: 8%;
       width: 90%;
+    }
+    .customPagination {
+      bottom: 13svh;
+      left: 8%;
     }
   }
 }

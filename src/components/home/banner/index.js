@@ -5,7 +5,13 @@ import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 
 import bannerImg from "@/../public/home/banner.jpg";
 import bannerTablet from "@/../public/home/banner-tablet.jpg";
@@ -53,14 +59,24 @@ export default function Banner() {
       />
 
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
-        pagination={{ clickable: true }}
+        pagination={{
+          el: ".customPagination",
+          clickable: true,
+          renderBullet: (index, className) => {
+            return `<span class="${className} customDot"></span>`;
+          },
+        }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
         className="swiper position-absolute"
       >
         {sliderData?.map((slider, idx) => (
@@ -70,12 +86,14 @@ export default function Banner() {
               <p className="fs-5 text-center">{slider?.description}</p>
             </div>
 
-            <button className="btn btn-light fs-4 py-2 py-md-3 px-5  mt-5 d-block m-auto">
+            <button className="btn btn-light fs-4 py-2  px-5  mt-5 d-block m-auto">
               Read More
             </button>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <div className="customPagination d-flex justify-content-center gap-2 gap-md-3 position-absolute"></div>
     </div>
   );
 }
